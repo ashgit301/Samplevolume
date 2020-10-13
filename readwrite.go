@@ -79,7 +79,7 @@ func WriteData(w http.ResponseWriter, r *http.Request) {
 }
 func ReadData(w http.ResponseWriter, r *http.Request) {
 	//w.Header().Set("Content-Type", "application/json")
-	AddLogs()
+	ReadLogs()
 	response := "reading logs from logs.txt file"
 	//response.Put("message", "Logs Readed Successfully")
 	w.Write([]byte(response))
